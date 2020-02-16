@@ -1,11 +1,22 @@
 \documentclass{article}
 \usepackage{amsthm}
+% \usepackage{ntheorem}
 \usepackage{amsfonts}
 
-\theoremstyle{definition}
+% define break theorem style
+\newtheoremstyle{break}
+  {\topsep}{\topsep}%
+  % {\itshape}{}%
+  {\normalfont}{}%
+  {\bfseries}{}%
+  {\newline}{}%
+
+% define definition 
+\theoremstyle{break}
 \newtheorem{definition}{Definition}[subsection]
 
 \newcommand*{\Z}{\mathbb{Z}}
+\newcommand*{\N}{\mathbb{N}}
 
 \begin{document}
 \title{Definitions for Abstract Algebra}
@@ -14,17 +25,17 @@
 
 Taken from Abstract Algebra: An Introduction by Thomas W. Hungerford (ISBN
 978-1111569624). Created to study while taking MATH 3163: Modern Algebra at UNC
-Charlotte. Definitions orderd as they are in the book.
+Charlotte. Definitions ordered as they are in the book.
 
-\section{Chapter 1}
-\subsection{Section 1.1}
+\section{Arithmetic in $\Z$ Revisited}
+\subsection{}
 
 \begin{definition}[Well-Ordering Axiom] 
   every non-empty subset of the set of non-negative integers has a least 
   element
 \end{definition}
 
-\subsection{Section 1.2}
+\subsection{}
 \begin{definition}[Divisibility]
   Let $a, b \in \Z$ with $b \neq 0$. We say that $b$ divides $a$ and
   write $b \mid a$ if $a=bc$ for some $c \in \Z$.
@@ -42,10 +53,38 @@ Charlotte. Definitions orderd as they are in the book.
   $(a,b)$. it is also frequently called the greatest common \emph{denominator}.
 \end{definition}
 
-\begin{definition}[]
+\subsection{}
+\begin{definition}[Primality]
+  An integer $p$ is said to be \textbf{prime} if $p \neq 0, \pm 1$ and the
+  only divisors of $p$ are $\pm 1$ and $\pm p$.
 \end{definition}
 
-\begin{definition}[]
+\section{Congruence in $\Z$ and Modular Arithmetic}
+\subsection{}
+\begin{definition}[Congruence Modulo $n$]
+  Let $a, b, n \in \Z$ and $n > 0$. We say $a$ is congruent to $b$ modulo $n$
+  and write $a \equiv b (mod n)$ if $n \mid a - b$.
 \end{definition}
+
+\begin{definition}[Congruence Class]
+  Let $a, n \in \Z$ and $n > 0$. The congruence class of $a$ modulo $n$
+  (written $[a]_n$ or $[a]$) is the set of all integers that are congruent to
+  to $a$ modulo $n$. That is, $[a] = \{b | b \in \Z$ and $b \equiv a (mod n)\}$
+\end{definition}
+
+\begin{definition}[The Set of All Congruence Classes] 
+  $\Z_n$, read "$\Z$ mod $n$" is the set of all congruence classes modulo n.
+  Note that for every $n$ where $n \in \Z$ and $n > 1$, $\Z_n$ is a finite set,
+  but each congruence class in that set is an infinite set. 
+\end{definition}
+
+\subsection{}
+\begin{definition}[Addition and Multiplication in $\Z_n$]
+  $[a] \oplus [b] = [a + b]$
+  \\$[a] \odot [b] = [a \cdot b]$
+\end{definition}
+
+% \begin{definition}[]
+% \end{definition}
 
 \end{document}
