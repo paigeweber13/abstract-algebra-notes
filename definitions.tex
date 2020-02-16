@@ -1,17 +1,51 @@
 \documentclass{article}
-% \usepackage{amsthm}
+\usepackage{amsthm}
+\usepackage{amsfonts}
 
-\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+
+\newcommand*{\Z}{\mathbb{Z}}
 
 \begin{document}
 \title{Definitions for Abstract Algebra}
 \author{Riley Weber}
 \maketitle
 
-\begin{definition}
-  Well-Ordering Axiom 
-  
-  every non-empty subset of the set of non-negative integers has a least element
+Taken from Abstract Algebra: An Introduction by Thomas W. Hungerford (ISBN
+978-1111569624). Created to study while taking MATH 3163: Modern Algebra at UNC
+Charlotte. Definitions orderd as they are in the book.
+
+\section{Chapter 1}
+\subsection{Section 1.1}
+
+\begin{definition}[Well-Ordering Axiom] 
+  every non-empty subset of the set of non-negative integers has a least 
+  element
+\end{definition}
+
+\subsection{Section 1.2}
+\begin{definition}[Divisibility]
+  Let $a, b \in \Z$ with $b \neq 0$. We say that $b$ divides $a$ and
+  write $b \mid a$ if $a=bc$ for some $c \in \Z$.
+\end{definition}
+
+\begin{definition}[Greatest Common Divisor]
+  Let $a, b \in \Z$, not both zero. The greatest common divisor ($gcd$) is
+  the greatest integer that divides both $a$ and $b$. This means that if $d$ is
+  the $gcd$ of $a$ and $b$, then
+  \begin{enumerate}
+    \item $d \mid a$ and $d \mid b$
+    \item if $c \mid a$ and $c \mid b$, then $c \leq d$
+  \end{enumerate}
+  The greatest common divisor is often written $d = gcd(a,b)$ or simply
+  $(a,b)$. it is also frequently called the greatest common \emph{denominator}.
+\end{definition}
+
+\begin{definition}[]
+\end{definition}
+
+\begin{definition}[]
 \end{definition}
 
 \end{document}
