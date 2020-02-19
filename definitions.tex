@@ -87,6 +87,8 @@ chapter.
 
 \subsection{}
 \begin{definition}[Unit]
+  Let $n \in \N$. A member of $\Z_n$ is a \textbf{unit} of $\Z_n$ if the
+  equation $a \odot x = [1]$ has a solution in $\Z_n$.
 \end{definition}
 
 \section{Rings}
@@ -97,10 +99,48 @@ chapter.
   addition and multiplication) that satisfy the following axioms.
 
   For all $a, b, c \in R$:
-  \begin{enumerate}
-    \item 
-  \end{enumerate}
+
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{l p{6cm} p{4cm}}
+    1. & If $a \in R$ and $b \in R$, then $a + b \in R$ & [Closure for
+    addition] \\
+
+    2. & $a + (b + c) = (a + b) + c$ & [Associative addition] \\
+
+    3. & $a + b = b + a$ & [Commutative addition] \\
+
+    4. & There is an element $0_R \in R$ such that $a + 0_R = a = 0_R + a$ for
+    every $a \in R$ & [Additive identity or zero element] \\
+
+    5. & For each $a \in R$, the equation $a+x=0_R$ has a solution in R &
+    [Additive inverse] \\
+
+    6. & If $a \in R$ and $b \in R$, then $ab \in R$ & [Closure for
+    multiplication] \\
+
+    7. & $a(bc) = (ab)c$ & [Associative multiplication] \\
+
+    8. & $a(b + c) = ab + ac$ and $(a + b )c = ac + bc$ & [Distributive laws]
+    \\
+  \end{tabular}
 \end{definition}
+
+\begin{definition}[Commutative Ring]
+  A commutative ring is a ring $R$ in which $ab = ba$ for all $a, b \in R$
+  (commutative multiplication).
+\end{definition}
+
+\begin{definition}[Ring with Identity] A ring with identity is a ring $R$ that
+  contains a special element $1_R$ such that $a \cdot 1_R = a = 1_R \cdot a$
+  for all $a \in R$ (multiplicative identity).
+\end{definition}
+
+% \begin{definition}[Integral Domains]
+%   An integral domain is a commutative ring $R$
+% \end{definition}
+
+% \begin{definition}[]
+% \end{definition}
 
 % \begin{definition}[]
 % \end{definition}
