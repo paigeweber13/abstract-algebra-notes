@@ -2,6 +2,7 @@
 \usepackage{amsthm}
 % \usepackage{ntheorem}
 \usepackage{amsfonts}
+\usepackage{graphicx}
 
 % define break theorem style
 \newtheoremstyle{break}
@@ -137,12 +138,23 @@ chapter.
   for all $a \in R$ (multiplicative identity).
 \end{definition}
 
-% \begin{definition}[Integral Domains]
-%   An integral domain is a commutative ring $R$
-% \end{definition}
+\begin{definition}[Integral Domains]
+  An integral domain is a commutative ring $R$ with identity such that if $a, b
+  \in R$ and $ab = 0_R$ then either $a = 0_R$ or $b = 0_R$.
+\end{definition}
 
-% \begin{definition}[]
-% \end{definition}
+\begin{definition}[Field]
+  A field is a commutative ring $R$ with identity $1_R$ such that if $a \in R
+  \setminus \{0_R\}$ then $a$ is a unit (i.e. the equation $ax = 1_R$ has a
+  solution in $R$)
+\end{definition}
+
+Following is a diagram which illustrates what common sets are also rings,
+fields, and the like.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{ring-venn-diagram.jpg}
+\end{figure}
 
 % \begin{definition}[]
 % \end{definition}
