@@ -1,0 +1,30 @@
+
+\documentclass{article}
+\usepackage{amsthm}
+% \usepackage{ntheorem}
+\usepackage{amsfonts}
+
+% define break theorem style
+\newtheoremstyle{break}
+  {\topsep}{\topsep}%
+  % {\itshape}{}%
+  {\normalfont}{}%
+  {\bfseries}{}%
+  {\newline}{}%
+
+% define definition 
+\theoremstyle{break}
+\newtheorem{definition}{Definition}[subsection]
+
+\newtheorem{theorem}{Theorem}
+
+\newcommand*{\Z}{\mathbb{Z}}
+\newcommand*{\N}{\mathbb{N}}
+
+\begin{document}
+
+\begin{theorem}
+  Let $p \in \N$ and $p > 1$
+\end{theorem}
+
+\end{document}
