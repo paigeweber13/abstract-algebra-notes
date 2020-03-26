@@ -199,6 +199,33 @@ fields, and the like.
   \end{itemize}
 \end{definition}
 
+\section{Divisibility in $F[x]$}
+
+\begin{definition}[Greatest Common Denominators in Polynomials]
+  Let $F$ be a field and let $f(x), g(x) \in F[x]$ with at least one of them
+  not equal to $0_F$. Then, the \textbf{greatest common divisor} of $f(x)$ and
+  $g(x)$ is the unique, monic $d(x) \in F[x] \setminus \{0_F\}$ such that 
+  \begin{enumerate}
+    \item $d(x) \mid f(x)$ and $d(x) \mid g(x)$
+    \item if $h(x) \mid f(x)$ and $h(x) \mid g(x)$ for some $h(x) \in F[x]$,
+    then $deg(h) \leq deg(d)$
+  \end{enumerate}
+  This is often written as $d(x) = gcd(f(x), g(x))$
+\end{definition}
+
+\begin{definition}[Relative Primality]
+  Let $F$ be a field and let $f(x), g(x) \in F[x]$, not both $0_F$. (read "$f$
+  and $g$ are polynomials under the field $F$, not both zero). We say $f(x)$
+  and $g(x)$ are \textbf{relatively prime} if $gcd(f(x), g(x)) = 1_F$
+
+  For example:
+  \begin{itemize}
+    \item $gcd(x^2 - 1, x^2 + 2x + 1) = x + 1$, so these are \textbf{not}
+    relatively prime 
+    \item $gcd(x^2 - 1, x^3 + x) = 1$, so these \textbf{are} relatively prime
+  \end{itemize}
+\end{definition}
+
 % \begin{definition}[]
 % \end{definition}
 
