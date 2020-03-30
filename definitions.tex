@@ -181,6 +181,19 @@ fields, and the like.
   \end{itemize}
 \end{definition}
 
+\begin{definition}[Polynomial Arithmetic]
+  If $f(x), g(x) \in R[x]$, then $+$ and $\cdot$ are defined in the "usual"
+  way. I.e.:
+
+  \begin{itemize}
+    \item $(r_0 + r_1x + r_2x^2 + ... + r_nx^n) + (s_0 + s_1x + s_2x^2 + ... +
+    s_mx^m) = (r_0 + s_0) + (r_1 + s_1)x + (r_2 + s_2)x^2 + ...$
+    \item $(r_0 + r_1x + r_2x^2 + ... + r_nx^n) \cdot (s_0 + s_1x + s_2x^2 +
+    ... + s_mx^m) = (r_0 \cdot s_0) + (r_0s_1 + r_1s_0)x + (r_0s_2 + r_1s_1 +rs_0
+    +r_2s_0 s_2)x^2 + ...$
+  \end{itemize}
+\end{definition}
+
 \begin{definition}[Degrees and Leading Coefficients]
   If $f(x) \in R[x] \setminus R$, then $f(x) = r_0 + r_1x + r_n x^n$ for some
   $n \in \N$ and $a_n \neq 0_R$. We say:
@@ -195,14 +208,20 @@ fields, and the like.
   \begin{itemize}
     \item If $f(x) \in R \setminus \{ 0_R \}$, then the degree of $f(x)$ in
     $R[x]$ is $0$. Note that this means $f(x)$ have no variable terms, no $x$. 
-    \item The degree of $0_R$ in $R[x]$ is undefined. (But it can make sense to
-    think of it as having degree $-\infty$)
+    \item The degree of $0_R$ in $R[x]$ is undefined. $0_R$ does not have a
+    degree. (But it can make sense to think of it as having degree $-\infty$)
   \end{itemize}
 \end{definition}
 
-\section{Divisibility in $F[x]$}
+\subsection{Divisibility in $F[x]$}
 
-\begin{definition}[Greatest Common Denominators in Polynomials]
+\begin{definition}[Divisibility and Factors]
+  Let $F$ be a field and let $f(x), g(x) \in F[x]$ with $g(x) \neq 0_F$. We say
+  that $g(x)$ \textbf{divides} $f(x)$ and that $g(x)$ is a \textbf{factor} of
+  $f(x)$ if $f(x) = g(x)q(x)$ for some $q(x) \in F[x]$.
+\end{definition}
+
+\begin{definition}[Greatest Common Denominators for Polynomials]
   Let $F$ be a field and let $f(x), g(x) \in F[x]$ with at least one of them
   not equal to $0_F$. Then, the \textbf{greatest common divisor} of $f(x)$ and
   $g(x)$ is the unique, monic $d(x) \in F[x] \setminus \{0_F\}$ such that 
