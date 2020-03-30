@@ -14,7 +14,9 @@
 
 % define definition 
 \theoremstyle{break}
-\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
 
 \newcommand*{\Z}{\mathbb{Z}}
 \newcommand*{\N}{\mathbb{N}}
@@ -33,6 +35,34 @@ chapter.
 \section*{Chapter 4}
 % optional, to include this section in the toc
 % \addcontentsline{toc}{section}{Chapter 4}
-\subsection*{Corollary 4.9}
+\begin{theorem*}[4.2]
+  If $R$ is an integral domain and $f(x), g(x)$ are non-zero polynomials in
+  $R[x]$, then deg$[f(x)g(x)] = $ deg$[f(x)] +$ deg$[g(x)]$
+\end{theorem*}
+
+\begin{corollary*}[4.3]
+  If $R$ is an integral domain, the so is $R[x]$
+\end{corollary*}
+
+\begin{corollary*}[4.4]
+  Let $R$ be a ring. If $f(x)$, $g(x)$, and $f(x)g(x)$ are nonzero in $R[x]$,
+  then deg$(f \cdot g) \leq $ deg$(f) + $ deg $(g)$
+\end{corollary*}
+
+\begin{corollary*}[4.5]
+  Let $R$ be a an integral domain and $f(x) \in R[x]$. Then:
+  \begin{itemize}
+    \item $f(x)$ is a unit in $R[x]$ iff $f(x)$ is a constant polynomial that
+    is a unit in $R$
+    \item In particular, if $R$ is also a field, then the units in $R[x]$ are
+    the nonzero constants in $F$
+  \end{itemize}
+\end{corollary*}
+
+\begin{corollary*}[4.9]
+\end{corollary*}
+
+% \begin{theorem*}[]
+% \end{theorem*}
 
 \end{document}
