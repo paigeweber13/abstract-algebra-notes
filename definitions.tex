@@ -237,8 +237,7 @@ fields, and the like.
   Let $F$ be a field and let $f(x), g(x) \in F[x]$, not both $0_F$. (read "$f$
   and $g$ are polynomials under the field $F$, not both zero). We say $f(x)$
   and $g(x)$ are \textbf{relatively prime} if $gcd(f(x), g(x)) = 1_F$
-
-  For example:
+  \\ \\ For example:
   \begin{itemize}
     \item $gcd(x^2 - 1, x^2 + 2x + 1) = x + 1$, so these are \textbf{not}
     relatively prime 
@@ -246,7 +245,52 @@ fields, and the like.
   \end{itemize}
 \end{definition}
 
-% \begin{definition}[]
-% \end{definition}
+\subsection{Irreducibles and Unique Factorization}
+
+\begin{definition}[Polynomial Associates]
+  $f(x)$ is said to be an \textbf{associate} of $g(x)$ in $F[x]$ if and only if
+  $f(x) = cg(x)$ for some nonzero $c \in F$.
+  \\ \\ Notice that $c$ is in $F$ and not $F[x]$. This means that $c$ is constant.
+\end{definition}
+
+\begin{definition}[Irreducible Polynomials]
+  Let $F$ be a field. A nonconstant polynomial $p(x) \in F[x]$ is said to be
+  \textbf{irreducible} if its only divisors are its associates and the nonzero
+  constant polynomials (units). A nonconstant polynomial that is not
+  irreducible is said to be \textbf{reducible}.
+  \\ \\ Notice that every polynomial of degree 1 in $F[x]$ is irreducible in $F[x]$
+\end{definition}
+
+\subsection{Polynomial Functions, Roots, and Reducibility}
+Skipped because it is not on test 2
+
+\subsection{Irreducibility in $Q[x]$}
+Skipped because it is not on test 2
+
+\subsection{Irreducibility in $R[x]$ and $C[x]$}
+Skipped because it is not on test 2
+
+\section{Congruence in $F[x]$ and Congruence-Class Arithmetic}
+
+\subsection{Congruence and Congruence Classes in $F[x]$}
+
+\begin{definition}[Congruence for Polynomials]
+  Let $F$ be a field and $f(x), g(x), p(x) \in F[x]$ with $p(x)$ nonzero. Then
+  $f(x)$ is \textbf{congruent to} $g(x)$ modulo $p(x)$ - written $f(x) \equiv
+  g(x)($ mod $p(x))$ - provided that $p(x) \mid f(x) - g(x)$
+  \\ \\ Recall that $\mid$ means "divides".
+\end{definition}
+
+\begin{definition}[Congruence Classes for Polynomials]
+  Let $F$ be a field and $f(x), g(x), p(x) \in F[x]$ with $p(x)$ nonzero. The
+  \textbf{congruence class} (a.k.a. \textbf{residue class}) of $f(x)$ modulo
+  $p(x)$ is denoted $[f(x)]$ and consists of all polynomials in $F[x]$ that are
+  congruent to $f(x)$ modulo $p(x)$. That is:
+  \\ \\ $[f(x)] = \{ g(x) \mid g(x) \in F[x] $ and $ g(x) \equiv f(x) ($ mod
+  $p(x)) \}$
+\end{definition}
+
+\begin{definition}[]
+\end{definition}
 
 \end{document}
